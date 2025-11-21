@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://postrescorinto.com/</loc>
+        <loc>https://postres-corinto.github.io/postres-corinto/</loc>
         <lastmod>2025-11-21</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://postrescorinto.com/#inicio</loc>
+        <loc>https://postres-corinto.github.io/postres-corinto/#inicio</loc>
         <lastmod>2025-11-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://postrescorinto.com/#nosotros</loc>
+        <loc>https://postres-corinto.github.io/postres-corinto/#nosotros</loc>
         <lastmod>2025-11-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://postrescorinto.com/#menu</loc>
+        <loc>https://postres-corinto.github.io/postres-corinto/#menu</loc>
         <lastmod>2025-11-21</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://postrescorinto.com/#contacto</loc>
+        <loc>https://postres-corinto.github.io/postres-corinto/#contacto</loc>
         <lastmod>2025-11-21</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

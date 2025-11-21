@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://postrescorinto.com/sitemap.xml
+Sitemap: https://postres-corinto.github.io/postres-corinto/sitemap.xml
 
 # Bloquear archivos sensibles
 Disallow: /config.js
