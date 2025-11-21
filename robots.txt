@@ -1,0 +1,10 @@
+# robots.txt para Postres Corinto
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://postrescorinto.com/sitemap.xml
+
+# Bloquear archivos sensibles
+Disallow: /config.js
+Disallow: /*.json$

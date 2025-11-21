@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "nombre": "Pastel de chocolate",
+    "categoria": "pasteles",
+    "descripcion": "Bizcocho de chocolate húmedo con crema batida.",
+    "precio": 25.00,
+    "imagen": "./imagenes/postre1.jpeg",
+    "alt": "Pastel de Chocolate"
+  },
+  {
+    "id": 2,
+    "nombre": "Tres Leches Clásico",
+    "categoria": "tresleches",
+    "descripcion": "La receta tradicional, super húmedo y con crema batida.",
+    "precio": 18.00,
+    "imagen": "./imagenes/postre30.jpeg",
+    "alt": "Tres Leches"
+  },
+  {
+    "id": 3,
+    "nombre": "Cheesecake New York",
+    "categoria": "cheesecake",
+    "descripcion": "Cremoso, con base de galleta cubierta a tu gusto con chocolote, dulce de leche o mermelada de fresa.",
+    "precio": 22.00,
+    "imagen": "./imagenes/postre13.jpeg",
+    "alt": "Cheesecake Fresa"
+  },
+  {
+    "id": 4,
+    "nombre": "caja de Cupcakes (6) (12)",
+    "categoria": "cupcakes",
+    "descripcion": "Sabores surtidos: Vainilla, chocolate.",
+    "precio": 5.00, 
+    "imagen": "./imagenes/postre32.jpeg",
+    "alt": "Cupcakes"
+  },
+  {
+    "id": 5,
+    "nombre": "Pastel de Vainilla",
+    "categoria": "pasteles",
+    "descripcion": "Pan húmedo, esponjoso con crema batida y dedicatoria personalizada.",
+    "precio": 35.00,
+    "imagen": "./imagenes/postre31.jpeg",
+    "alt": "Pastel Boda"
+  },
+  {
+    "id": 6,
+    "nombre": "Tres Leches de Moka",
+    "categoria": "tresleches",
+    "descripcion": "Un toque de café espresso en nuestra mezcla de leches.",
+    "precio": 20.00,
+    "imagen": "https://images.unsplash.com/photo-1601289386486-98182c223c46?q=80&w=800&auto=format&fit=crop",
+    "alt": "Tres Leches Moka"
+  }
+]
