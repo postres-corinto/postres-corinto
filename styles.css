@@ -42,6 +42,29 @@ body {
 
 /* ========== ANIMACIONES NAVIDEÑAS ========== */
 
+/* Banner Navideño */
+.christmas-banner {
+    background-image: 
+        url('https://images.unsplash.com/photo-1512389142860-9c449e58a543?q=80&w=1920&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Animación de flotación */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
 /* Contenedor de nieve */
 .snowflakes {
     position: fixed;
