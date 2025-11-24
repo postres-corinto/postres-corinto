@@ -203,17 +203,34 @@ function crearNieve() {
     }
 }
 
-// Agregar luces navideñas al navbar
-function agregarLucesNavidenas() {
-    const navbar = document.getElementById('navbar');
-    const lights = document.createElement('div');
-    lights.className = 'christmas-lights';
-    navbar.style.position = 'relative';
-    navbar.insertBefore(lights, navbar.firstChild);
+// Crear efecto de partículas doradas y plateadas
+function crearParticulas() {
+    const sparklesContainer = document.createElement('div');
+    sparklesContainer.className = 'sparkles';
+    document.body.appendChild(sparklesContainer);
+
+    const numberOfSparkles = 30;
+
+    for (let i = 0; i < numberOfSparkles; i++) {
+        const sparkle = document.createElement('div');
+        sparkle.className = i % 2 === 0 ? 'sparkle gold' : 'sparkle silver';
+        
+        // Posición horizontal aleatoria
+        sparkle.style.left = Math.random() * 100 + '%';
+        
+        // Duración aleatoria de caída (más lenta que la nieve)
+        const duration = Math.random() * 5 + 8; // 8-13 segundos
+        sparkle.style.animationDuration = `${duration}s, 1s`;
+        
+        // Retraso aleatorio
+        sparkle.style.animationDelay = Math.random() * 8 + 's';
+        
+        sparklesContainer.appendChild(sparkle);
+    }
 }
 
 // Inicializar animaciones navideñas cuando cargue la página
 document.addEventListener('DOMContentLoaded', () => {
     crearNieve();
-    agregarLucesNavidenas();
+    crearParticulas();
 });
