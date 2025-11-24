@@ -39,3 +39,105 @@ body {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* ========== ANIMACIONES NAVIDEÑAS ========== */
+
+/* Contenedor de nieve */
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* Copos de nieve individuales */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: #fff;
+    font-size: 1em;
+    user-select: none;
+    z-index: 9999;
+    animation: fall linear infinite;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Animación de caída */
+@keyframes fall {
+    0% {
+        top: -10%;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 0.3;
+    }
+}
+
+/* Diferentes tamaños y velocidades */
+.snowflake:nth-child(odd) {
+    animation-duration: 10s;
+}
+
+.snowflake:nth-child(even) {
+    animation-duration: 15s;
+}
+
+.snowflake:nth-child(3n) {
+    animation-duration: 12s;
+    font-size: 0.8em;
+}
+
+.snowflake:nth-child(4n) {
+    animation-duration: 18s;
+    font-size: 1.2em;
+}
+
+/* Luces navideñas en el navbar */
+.christmas-lights {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        #ff0000 0%, #ff0000 10%,
+        #00ff00 10%, #00ff00 20%,
+        #ffff00 20%, #ffff00 30%,
+        #0000ff 30%, #0000ff 40%,
+        #ff00ff 40%, #ff00ff 50%,
+        #ff0000 50%, #ff0000 60%,
+        #00ff00 60%, #00ff00 70%,
+        #ffff00 70%, #ffff00 80%,
+        #0000ff 80%, #0000ff 90%,
+        #ff00ff 90%, #ff00ff 100%
+    );
+    background-size: 200% 100%;
+    animation: lights-move 3s linear infinite, lights-glow 1.5s ease-in-out infinite alternate;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes lights-move {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 200% 0%;
+    }
+}
+
+@keyframes lights-glow {
+    0% {
+        opacity: 0.8;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        opacity: 1;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+}

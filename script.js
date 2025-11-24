@@ -173,3 +173,47 @@ window.addEventListener('scroll', () => {
         navbar.classList.add('py-2');
     }
 });
+
+// ========== FUNCIONES NAVIDEÑAS ==========
+
+// Crear efecto de nieve
+function crearNieve() {
+    const snowflakesContainer = document.createElement('div');
+    snowflakesContainer.className = 'snowflakes';
+    document.body.appendChild(snowflakesContainer);
+
+    const snowflakeChars = ['❄', '❅', '❆'];
+    const numberOfSnowflakes = 50;
+
+    for (let i = 0; i < numberOfSnowflakes; i++) {
+        const snowflake = document.createElement('div');
+        snowflake.className = 'snowflake';
+        snowflake.textContent = snowflakeChars[Math.floor(Math.random() * snowflakeChars.length)];
+        
+        // Posición horizontal aleatoria
+        snowflake.style.left = Math.random() * 100 + '%';
+        
+        // Retraso aleatorio para que no caigan todos al mismo tiempo
+        snowflake.style.animationDelay = Math.random() * 10 + 's';
+        
+        // Opacidad aleatoria
+        snowflake.style.opacity = Math.random() * 0.6 + 0.4;
+        
+        snowflakesContainer.appendChild(snowflake);
+    }
+}
+
+// Agregar luces navideñas al navbar
+function agregarLucesNavidenas() {
+    const navbar = document.getElementById('navbar');
+    const lights = document.createElement('div');
+    lights.className = 'christmas-lights';
+    navbar.style.position = 'relative';
+    navbar.insertBefore(lights, navbar.firstChild);
+}
+
+// Inicializar animaciones navideñas cuando cargue la página
+document.addEventListener('DOMContentLoaded', () => {
+    crearNieve();
+    agregarLucesNavidenas();
+});
